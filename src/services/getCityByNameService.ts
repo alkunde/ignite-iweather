@@ -25,7 +25,8 @@ export async function getCityByNameService(name: string): Promise<CityProps[] | 
 
     const city = {
       id: data.id,
-      name: data.sys.country ? `${data.name}, ${data.sys.country}` : data.name,
+      // name: data.sys.country ? `${data.name}, ${data.sys.country}` : data.name,
+      name: `${data.name}, ${data.sys.country}`,
       longitude: data.coord.lon,
       latitude: data.coord.lat,
     };

@@ -15,7 +15,7 @@ type Props = {
 
 export function SelectList(props: Props) {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID="search-input">
       <Input        
         placeholder={props.placeholder}
         onChangeText={props.onChange}
@@ -23,7 +23,7 @@ export function SelectList(props: Props) {
         value={props.value}
       />
 
-      <View style={styles.options}>
+      <View style={styles.options} testID="options">
         {
           props.data.map((item) => (
             <TouchableOpacity
