@@ -4,7 +4,7 @@ import clearDayIcon from "@assets/clear_day.svg";
 import { Day } from "@components/Day";
 
 describe("Component: Day", () => {
-  it("should", () => {
+  it("should be render day", () => {
     render(
       <Day
         data={{
