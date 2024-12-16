@@ -2,7 +2,7 @@ import { WeatherAPIResponseProps } from "@services/getWeatherByCityService";
 
 const currentDay = new Date();
 const nextDay = new Date();
-nextDay.setDate(currentDay.getDate() + 1)
+nextDay.setDate(currentDay.getDate() + 1);
 
 export const mockWeatherAPIResponse: WeatherAPIResponseProps = {
   list: [
